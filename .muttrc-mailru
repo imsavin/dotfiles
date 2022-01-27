@@ -1,0 +1,46 @@
+set realname="Илья Савин"
+set from=xxxxxxxxx@mail.ru
+set use_from=yes
+set mailcap_path=~/.mutt/mailcap
+auto_view text/html
+set my_pass=
+set imap_pass=$my_pass
+set my_user=xxxx@mail.ru
+set smtp_url=smtps://$my_user:$my_pass@smtp.mail.ru
+set spoolfile=imaps://$my_user@imap.mail.ru
+set folder=imaps://imap.mail.ru:993
+set editor=vim
+set rfc2047_parameters=yes
+set record = =Отправленные
+set ssl_starttls=yes
+set ssl_force_tls=yes
+unset imap_passive
+set imap_check_subscribed
+set mail_check=60
+set sort=threads
+
+# scroll message line by line using arrows
+bind pager <up> previous-line
+bind pager <down> next-line
+
+# scroll index line by line
+set menu_scroll
+set header_cache="~/.mutt/header_cache"
+set message_cachedir="~/.mutt/message_cache"
+
+set ssl_force_tls = yes
+
+mono underline underline
+mono indicator reverse
+mono  header bold             "^(From|Subject|X-Junked-Because|X-Virus-hagbard):"
+mono  index bold              ~N
+mono  index bold              ~F
+mono  index bold              ~T
+mono  index bold              ~D
+mono  body bold              "(http|https|ftp|news|telnet|finger)://[^ \">\t\r\n]*"
+mono  body bold              "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+mono  body bold              "news:[^ \">\t\r\n]*"
+mono  body bold              "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+
+#Color Theme
+source ~/.mutt/dracula.muttrc

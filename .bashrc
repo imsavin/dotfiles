@@ -1,0 +1,8 @@
+export PS1="\[\033[38;5;14m\]\u\[$(tput sgr0)\]\[\033[38;5;10m\]@\[$(tput sgr0)\]\[\033[38;5;14m\]\h\[$(tput sgr0)\]\[\033[38;5;10m\][\[$(tput sgr0)\]\[\033[38;5;14m\]\w\[$(tput sgr0)\]\[\033[38;5;10m\]][\[$(tput sgr0)\]\[\033[38;5;37m\]\A\[$(tput sgr0)\]\[\033[38;5;10m\]]\\$>\[$(tput sgr0)\] \[$(tput sgr0)\]"
+alias ls="ls --color --group-directories-first"
+alias ll="ls -lah --group-directories-first --color"
+alias grep="grep --color"
+alias glg="git log --oneline --graph"
+export EDITOR="vim"
+export TERM="xterm-256color"
+export PATH="$PATH:$HOME/.local/bin"
