@@ -8,6 +8,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'lifepillar/vim-mucomplete'
 Plugin 'noahfrederick/vim-noctu'
 Plugin 'manu-sh/neonvimcolorscheme'
+Plugin 'junegunn/fzf'
 Plugin 'mr-ubik/vim-hackerman-syntax'
 call vundle#end()            " required
 
