@@ -1,0 +1,4 @@
+*dpi: 96
+Xft.dpi: 96
+#include ".config/xterm-xresources"
+#include ".config/urxvt-xresources"

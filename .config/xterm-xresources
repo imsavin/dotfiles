@@ -1,0 +1,45 @@
+xterm*foreground:  #8ff586
+xterm*background:  #142838
+xterm*cursorColor: #c4206f
+!
+! Black
+xterm*color0:      #142631
+xterm*color8:      #fff688
+!
+! Red
+xterm*color1:      #ff2320
+xterm*color9:      #d4312e
+!
+! Green
+xterm*color2:      #3ba5ff
+xterm*color10:     #8ff586
+!
+! Yellow
+xterm*color3:      #e9e75c
+xterm*color11:     #e9f06d
+!
+! Blue
+xterm*color4:      #8ff586
+xterm*color12:     #3c7dd2
+!
+! Magenta
+xterm*color5:      #781aa0
+xterm*color13:     #8230a7
+!
+! Cyan
+xterm*color6:      #8ff586
+xterm*color14:     #6cbc67
+!
+! White
+xterm*color7:      #ba46b2
+xterm*color15:     #8ff586
+!
+! Bold, Italic, Underline
+xterm*colorBD:     #248b70
+!xterm*colorIT:
+!xterm*colorUL:
+xterm*termName: xterm-256color
+xterm*translations: #override \n\
+Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+xterm*faceName: Iosevka Extended:size=11:antialias=true
