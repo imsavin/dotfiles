@@ -14,10 +14,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rafi/awesome-vim-colorschemes'
 Plugin 'junegunn/fzf'
 Plugin 'mr-ubik/vim-hackerman-syntax'
+Plugin 'rip-rip/clang_complete'
+Plugin 'davidhalter/jedi-vim'
 call vundle#end()            " required
 
 filetype plugin indent on    " required
-
+let g:clang_library_path='/usr/lib64/libclang.so'
 let g:neocomplcache_enable_at_startup = 1
 source $VIMRUNTIME/mswin.vim
 behave mswin
@@ -31,7 +33,7 @@ set undodir=~/.vim/undo
 set backupdir=~/.vim/bkp
 set statusline=%<%f%m\ \[%{&ff}:%{&fenc}:%Y]\ %{getcwd()}\ \ \[%{strftime('%Y/%b/%d\ %a\ %I:%M\ %p')}\]\ %=\ Line:%l\/%L\ Column:%c%V\ %P 
 
-
+au BufRead,BufNewFile *.eb setfiletype python
 set completeopt+=menuone
 set completeopt+=noselect
 "set completeopt+=noinsert

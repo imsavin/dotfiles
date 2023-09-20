@@ -1,11 +1,11 @@
 command=$HOME/.config/i3blocks/scripts/$BLOCK_NAME
 
 [window]
-command=xtitle -s
-interval=persist
+command=echo "$(xtitle)"
+interval=1
 
 [taskw]
-command=taskw
+#command=taskw
 interval=15
 TASKW_TF=true
 TIMEW_TF=false
@@ -17,8 +17,8 @@ TASKW_PENDING_TF=false
 TASKW_MAIN_FILTER="+ACTIVE"
 
 [volume]
-label=VOL
-interval=once
+label=VOL 
+interval=1
 signal=10
 
 [iface]
