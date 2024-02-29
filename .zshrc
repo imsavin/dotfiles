@@ -34,3 +34,7 @@ source /opt/lmod/lmod/init/profile
 module use /home/jenkins/easybuild/modules/all
 autoload -Uz compinit
 compinit
+function zle-line-init () { echoti smkx }
+function zle-line-finish () { echoti rmkx }
+zle -N zle-line-init
+zle -N zle-line-finish

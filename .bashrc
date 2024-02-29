@@ -24,14 +24,17 @@ export GOPATH="$HOME/.go"
 export GO111MODULE="auto"
  . /etc/profile.d/bash_completion.sh 
 export NNN_OPENER=~/.config/nnn/plugins/nuke
-export EASYBUILD_PREFIX=$HOME/.apps
 #-----
 #LMOD needs
 #-----
+LUAROCKS_PREFIX=/usr
 #due to luarocks path
 export QT_QPA_PLATFORMTHEME=qt5ct
 . /usr/share/fzf/key-bindings.bash
 . /usr/share/bash-completion/completions/fzf
 . /opt/lmod/lmod/init/bash
 
-module use $EASYBUILD_PREFIX/modules/all
+module use /home/jenkins/easybuild/modules/all/
+tput smkx
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
